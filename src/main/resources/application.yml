@@ -1,0 +1,18 @@
+server:
+  port: 8100
+  
+spring:
+  application:
+    name: anuncios
+  datasource:
+    url: jdbc:postgresql://localhost:5432/DB_FINANCAS?useTimezone=true&serverTimezone=UTC
+    username: postgres
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL81Dialect
+        format-sql: true
